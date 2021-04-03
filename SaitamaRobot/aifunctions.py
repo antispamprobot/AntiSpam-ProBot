@@ -10,7 +10,7 @@ from telethon import types
 from telethon.tl import functions
 import asyncio, os
 
-@register(pattern="Elizabeth (.*)")
+@register(pattern="jarvis (.*)")
 async def hmm(event):
   test = event.pattern_match.group(1)
   r = ('\n    \"consent\": true,\n    \"ip\": \"::1\",\n    \"question\": \"{}\"\n').format(test)
@@ -29,7 +29,7 @@ async def hmm(event):
   lodu = response.json()
   result = (lodu['message']['text'])
   if "no no" in result:
-   pro = "I am fairly yound and I was made by @mr_srlock."
+   pro = "I am fairly yound and I was made by @tamilvip007."
    try:
       async with client.action(event.chat_id, 'typing'):
            await asyncio.sleep(2)
