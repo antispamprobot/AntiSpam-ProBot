@@ -37,7 +37,7 @@ async def hmm(event):
    except CFError as e:
            print(e)
   elif "ann" in result:
-   pro = "My name is Elizabeth"
+   pro = "My name is Jarvis"
    try:
       async with client.action(event.chat_id, 'typing'):
            await asyncio.sleep(2)
