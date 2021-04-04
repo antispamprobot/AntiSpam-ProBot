@@ -192,7 +192,7 @@ def start(update: Update, context: CallbackContext):
                               url="https://t.me/jarvis_support")
                           ]])) 
     else:
-      IMG = "https://telegra.ph/file/55f28a9300d14eb13d61c.mp4"
+      SAITAMA_IMG = "https://telegra.ph/file/55f28a9300d14eb13d61c.mp4"
         update.effective_message.reply_text(
             "I'm online!\n<b>Up since:</b> <code>{}</code>".format(uptime),
             parse_mode=ParseMode.HTML)
