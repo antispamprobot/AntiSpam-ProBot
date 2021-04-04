@@ -186,7 +186,7 @@ def start(update: Update, context: CallbackContext):
                           [
                               InlineKeyboardButton(
                               text="🍁Support Group🍁",
-                              url=f"https://t.me/jarvisuport"),
+                              url=f"https://t.me/jarvisupport"),
                               InlineKeyboardButton(
                               text="✨Updates Channel✨",
                               url="https://t.me/jarvis_support")
