@@ -193,7 +193,7 @@ def start(update: Update, context: CallbackContext):
                               url="https://t.me/jarvis_support")
                           ]])) 
     else:
-        update,effective_message.reply_video(
+        update.effective_message.reply_video(
                JARVISIMGSTART)
         update.effective_message.reply_text(
             "I'm online!\n<b>Up since:</b> <code>{}</code>".format(uptime),
