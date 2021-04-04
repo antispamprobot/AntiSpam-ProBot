@@ -51,8 +51,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello {},My Name is IGRIS
-𝐈 𝐀𝐌 𝐀 𝐑𝐎𝐘𝐀𝐋 𝐊𝐍𝐈𝐆𝐇𝐓 𝐅𝐑𝐎𝐌 𝐒𝐎𝐋𝐎 𝐋𝐄𝐕𝐄𝐋𝐈𝐍𝐆.
+Hello {},
+My Name is JARVIS
+I AM A LEGEND FROM MULTIUNVERSE.
 I will help you manage your group.
 TO KNOW MY COMMANDS CLICK /help.
 """
