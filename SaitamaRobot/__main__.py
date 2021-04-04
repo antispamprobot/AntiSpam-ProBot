@@ -193,7 +193,7 @@ def start(update: Update, context: CallbackContext):
                           ]])) 
     else:
         
-        update.effective_message.reply_photo("https://telegra.ph/file/86469ecc695daa443f034.mp4"
+        update.effective_message.reply_photo("https://telegra.ph/file/5b9deef6b4f77d3adfb8f.jpg"
             "I'm online!\n<b>Up since:</b> <code>{}</code>".format(uptime),
             parse_mode=ParseMode.HTML)
 
