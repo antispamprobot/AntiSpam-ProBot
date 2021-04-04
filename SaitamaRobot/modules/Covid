@@ -1,7 +1,7 @@
-from saitama import app
-from saitama.utils.errors import capture_err
-from saitama.utils.json_prettify import json_prettify
-from saitama.utils.fetch import fetch
+from Saitama import app
+from Saitama.utils.errors import capture_err
+from Saitama.utils.json_prettify import json_prettify
+from Saitama.utils.fetch import fetch
 from pyrogram import filters
 
 
