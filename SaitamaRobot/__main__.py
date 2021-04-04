@@ -79,6 +79,7 @@ And the following:
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 SAITAMA_IMG = "https://telegra.ph/file/84087b77fb99feef8a56a.mp4"
+JARVISIMGSTART = "https://telegra.ph/file/86469ecc695daa443f034.mp4"
 
 DONATE_STRING = """donate to the original writer of the Base code, Paul
 There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
