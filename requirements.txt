@@ -50,3 +50,7 @@ validators
 youtube_dl
 google_trans_new
 #googletrans
+pyrogram
+aiohttp
+aiofiles
+python-arq
