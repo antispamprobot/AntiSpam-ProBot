@@ -53,4 +53,4 @@ google_trans_new
 pyrogram
 aiohttp
 aiofiles
-python-arq
+pythom-arq
