@@ -1,4 +1,4 @@
-__mod_name__ = "Music Player"
+__mod_name__ = "MusicPlayer"
 __help__ = """
 MUSIC PLAYER 
 Music player which helps you to plays music in your group's voice chat
