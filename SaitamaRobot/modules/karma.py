@@ -85,7 +85,7 @@ async def kr(event):
  chat_id = event.chat_id
  if event.is_private:
   return
- if not await user_admin:;
+ if not await user_admin:
   return
  if not event.reply_to_msg_id:
         karma = await get_karmas(chat_id)
