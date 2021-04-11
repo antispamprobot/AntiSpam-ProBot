@@ -80,6 +80,17 @@ async def rv(event):
         await update_karma(chat_id, await int_to_alpha(user_id), new_karma)
  await telethn.send_message(event.chat_id, f"Decremented Karma Of [{fname}](tg://user?id={user_id}) By 1 \nTotal Points: {karma}")
  
+ async def is_admin(event, user):
+    try:
+        sed = await event.client.get_permissions(event.chat_id, user)
+        if sed.is_admin:
+            is_mod = True
+        else:
+            is_mod = False
+    except:
+        is_mod = False
+    return is_mod
+  
 @register(pattern="^/karma")
 async def kr(event):
  chat_id = event.chat_id
