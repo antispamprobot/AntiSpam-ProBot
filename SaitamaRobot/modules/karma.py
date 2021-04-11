@@ -4,7 +4,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 from SaitamaRobot.modules.sql.karma_sql import (update_karma, get_karma, get_karmas,
                                    int_to_alpha, alpha_to_int)
 from SaitamaRobot.events import register
-from SaitamaRobot.function import is_admin
+
 
 
 regex_upvote = r"^((?i)\+|\+\+|\+1|thx|tnx|ty|thank you|thanx|thanks|pro|cool|good|👍)$"
