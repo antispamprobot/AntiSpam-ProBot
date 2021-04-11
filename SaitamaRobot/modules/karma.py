@@ -1,4 +1,4 @@
-from SaitamaRobot import tbot, OWNER_ID, BOT_ID
+from SaitamaRobot import telethn, OWNER_ID, BOT_ID
 from telethon import events
 from telethon.tl.functions.users import GetFullUserRequest
 from SaitamaRobot.modules.sql.karma_sql import (update_karma, get_karma, get_karmas,
@@ -10,7 +10,7 @@ from SaitamaRobot.function import is_admin
 regex_upvote = r"^((?i)\+|\+\+|\+1|thx|tnx|ty|thank you|thanx|thanks|pro|cool|good|👍)$"
 regex_downvote = r"^(\-|\-\-|\-1|👎|Na|Gey|noob)$"
 
-@tbot.on(events.NewMessage(pattern=None))
+@telethn.on(events.NewMessage(pattern=None))
 async def kk(event):
  if event.is_private:
    return
@@ -29,7 +29,7 @@ async def kk(event):
  if not event.sender_id == OWNER_ID:
    if event.sender_id == user_id or user_id == BOT_ID:
       return
- arg = await tbot(GetFullUserRequest(user_id))
+ arg = await telethn(GetFullUserRequest(user_id))
  fname = arg.user.first_name
  chat_id = int(event.chat_id)
  current_karma = await get_karma(chat_id, await int_to_alpha(user_id))
@@ -42,10 +42,10 @@ async def kk(event):
         karma = 1
         new_karma = {"karma": karma}
         await update_karma(chat_id, await int_to_alpha(user_id), new_karma)
- await tbot.send_message(event.chat_id, f"Incremented Karma of [{fname}](tg://user?id={user_id}) By 1 \nTotal Points: {karma}")
+ await telethn.send_message(event.chat_id, f"Incremented Karma of [{fname}](tg://user?id={user_id}) By 1 \nTotal Points: {karma}")
  
 
-@tbot.on(events.NewMessage(pattern=None))
+@telethn.on(events.NewMessage(pattern=None))
 async def rv(event):
  if event.is_private:
    return
@@ -64,7 +64,7 @@ async def rv(event):
  if not event.sender_id == OWNER_ID:
    if event.sender_id == user_id or user_id == BOT_ID:
       return
- arg = await tbot(GetFullUserRequest(user_id))
+ arg = await telethn(GetFullUserRequest(user_id))
  fname = arg.user.first_name
  chat_id = int(event.chat_id)
  current_karma = await get_karma(chat_id, await int_to_alpha(user_id))
@@ -77,7 +77,7 @@ async def rv(event):
         karma = 1
         new_karma = {"karma": karma}
         await update_karma(chat_id, await int_to_alpha(user_id), new_karma)
- await tbot.send_message(event.chat_id, f"Decremented Karma Of [{fname}](tg://user?id={user_id}) By 1 \nTotal Points: {karma}")
+ await telethn.send_message(event.chat_id, f"Decremented Karma Of [{fname}](tg://user?id={user_id}) By 1 \nTotal Points: {karma}")
  
 @register(pattern="^/karma")
 async def kr(event):
@@ -101,7 +101,7 @@ async def kr(event):
             if limit > 9:
                 break
             try:
-                arg = await tbot.get_entity(int(user_idd))
+                arg = await telethn.get_entity(int(user_idd))
                 user_name = arg.username
             except Exception:
                 user_name = user_idd
