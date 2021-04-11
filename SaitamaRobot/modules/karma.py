@@ -4,6 +4,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 from SaitamaRobot.modules.sql.karma_sql import (update_karma, get_karma, get_karmas,
                                    int_to_alpha, alpha_to_int)
 from SaitamaRobot.events import register
+from SaitamaRobot.modules.helper_funcs.chat_status import user_admin
 
 
 
