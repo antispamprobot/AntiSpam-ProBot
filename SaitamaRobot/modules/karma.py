@@ -101,7 +101,7 @@ async def karma(_, message):
             if limit > 9:
                 break
             try:
-                user_name = (await telethn.get_users(int(user_idd))).username
+                user_name = (await pgram.get_users(int(user_idd))).username
             except Exception:
                 continue
             msg += f"{user_name} : `{karma_count}`\n"
