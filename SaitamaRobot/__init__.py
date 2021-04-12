@@ -8,8 +8,6 @@ import telegram.ext as tg
 from telethon import TelegramClient
 
 StartTime = time.time()
-mongo_client = MongoClient(MONGO_DB_URI)
-db = mongo_client.SaitamaRobot
 # enable logging
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -179,6 +177,8 @@ else:
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("saitama", API_ID, API_HASH)
+mongo_client = MongoClient(MONGO_DB_URI)
+db = mongo_client.SaitamaRobot
 dispatcher = updater.dispatcher
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
