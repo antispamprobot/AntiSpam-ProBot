@@ -21,11 +21,14 @@ from SaitamaRobot.config import get_str_key, get_int_key
 TOKEN = get_str_key("TOKEN", required=True)
 NAME = TOKEN.split(':')[0]
 
+
 telethn = TelegramClient(
     NAME,
     get_int_key("APP_ID", required=True),
     get_str_key("APP_HASH", required=True)
 )
+APP_ID = 2475835
+APP_HASH = a3db988ac64b1ba711e110227c3f5cee
 
 # Telethon
 telethn.start(bot_token=TOKEN)
