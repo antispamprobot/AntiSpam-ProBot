@@ -190,7 +190,7 @@ def start(update: Update, context: CallbackContext):
                               url=f"https://t.me/devils_territory/8"),
                               InlineKeyboardButton(
                               text="✨ GitHub link✨",
-                              url="https://github.com/DEVILTG/JARVISnomore/")
+                              url="https://github.com/DEVILTG/Yumekojabami")
                           ]])) 
     else:
         update.effective_message.reply_video(
