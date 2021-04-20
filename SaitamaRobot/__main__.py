@@ -52,15 +52,15 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hello {},
-My Name is JARVIS
-I AM A LEGEND FROM MULTIUNVERSE.
+My Name is Yumeko Jabami
+I AM A Pshycho Gambler who loves to gamble on life.
 I will help you manage your group.
 TO KNOW MY COMMANDS CLICK /help.
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a Lengend From Multiuniverse,I will help you manage your groups! Have a look at the following for an idea of some of \
+I'm a Gambler who loves to play games of life ,I will help you manage your groups! Have a look at the following for an idea of some of \
 the things I can help you with.
 
 *Main* commands available:
@@ -78,8 +78,8 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/84087b77fb99feef8a56a.mp4"
-JARVISIMGSTART = "https://telegra.ph/file/86469ecc695daa443f034.mp4"
+SAITAMA_IMG = "https://telegra.ph/file/92b754666e7468c923abd.jpg"
+JARVISIMGSTART = "https://telegra.ph/file/cc612ca774619743b9e5f.mp4"
 
 DONATE_STRING = """donate to the original writer of the Base code, Paul
 There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
@@ -180,21 +180,21 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(                   
                           [[
                               InlineKeyboardButton(
-                              text="🔥Add JARVIS To Your Group🔥",
+                              text="🔥Add Yumeko To Your Group🔥",
                               url="t.me/{}?startgroup=true".format(
                                   context.bot.username))
                           ], 
                           [
                               InlineKeyboardButton(
-                              text="🍁Support Group🍁",
-                              url=f"https://t.me/jarvisupport"),
+                              text="🍁 Chat Group🍁",
+                              url=f"https://t.me/devils_territory/8"),
                               InlineKeyboardButton(
-                              text="✨Updates Channel✨",
-                              url="https://t.me/jarvis_support")
+                              text="✨ GitHub link✨",
+                              url="https://github.com/DEVILTG/JARVISnomore/")
                           ]])) 
     else:
         update.effective_message.reply_video(
-               JARVISIMGSTART)
+               YumekoSTART)
         update.effective_message.reply_text(
             "I'm online!\n<b>Up since:</b> <code>{}</code>".format(uptime),
             parse_mode=ParseMode.HTML)
