@@ -186,10 +186,10 @@ def start(update: Update, context: CallbackContext):
                           ], 
                           [
                               InlineKeyboardButton(
-                              text="🍁 Chat Group🍁",
-                              url=f"https://t.me/devils_territory/8"),
+                              text="🍁 Support Group 🍁",
+                              url=f"https://t.me/joinchat/qrVgoJFXuV05ZjFl"),
                               InlineKeyboardButton(
-                              text="✨ GitHub link✨",
+                              text="✨ Github Link ✨",
                               url="https://github.com/DEVILTG/Yumekojabami")
                           ]])) 
     else:
