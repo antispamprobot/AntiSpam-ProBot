@@ -4,7 +4,7 @@ MUSIC PLAYER
 Music player which helps you to plays music in your group's voice chat
 
  Setting up
-1) Add @miko_music_bot and @superior_demon to your group
+1) Add @miko_music_bot to your group
 2) Make bot admin
 3) Start a voice chat
 
