@@ -274,19 +274,19 @@ def info(update: Update, context: CallbackContext):
         text += "\n\nThis person here is the 'King Of Hell' , you shouldn't mess with him."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThis user is CO-OWNER of '🍁SOLO•GUILD🍁'."
+        text += "\n\nThis user is the higher Demon of 'Devils Territory'."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThe HUNTER SKILL of this person is 'S-RANK'."
+        text += "\n\nThe person here is Special Demon of 'Hell'."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nThe HUNTER SKILL of this person is 'A-RANK'."
+        text += "\n\nThe person here is one of the respected demons of  'Hell'."
         disaster_level_present = True
     elif user.id in TIGERS:
         text += "\n\nThe HUNTER SKILL of this person is 'B-RANK'."
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\nThe HUNTER SKILL of this person is 'C-RANK'."
+        text += "\n\nThe person here is respected by the 'Devil' himself."
         disaster_level_present = True
 
     if disaster_level_present:
