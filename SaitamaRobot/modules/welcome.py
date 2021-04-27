@@ -171,7 +171,7 @@ def new_member(update: Update, context: CallbackContext):
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    "Oh,Hunter Skill Immeasurable?Who is that Person?",
+                    "Oh,the Devil himself has joined the chat !",
                     reply_to_message_id=reply)
                 welcome_log = (f"{html.escape(chat.title)}\n"
                                f"#USER_JOINED\n"
@@ -189,7 +189,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Sudos
             elif new_mem.id in DRAGONS:
                 update.effective_message.reply_text(
-                    "GOD! A S-RANK HUNTER just joined! Stay Alert!",
+                    "GOD! I wasn't expecting a high level demon in here!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -197,7 +197,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Support
             elif new_mem.id in DEMONS:
                 update.effective_message.reply_text(
-                    "Huh a A-RANK?! Someone with a A-RANK HUNTER SKILL just joined!",
+                    "Huh a Demon! A respected demon from hell just arrived!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -212,7 +212,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Tigers
             elif new_mem.id in WOLVES:
                 update.effective_message.reply_text(
-                    "JEZZ! A C-RANK Hunter just joined!",
+                    "JEZZ! I wasn't expecting a demon of this level to come here!",
                     reply_to_message_id=reply)
                 continue
 
