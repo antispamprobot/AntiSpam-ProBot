@@ -236,7 +236,7 @@ __help__ = """
 
 INSULT_HANDLER = DisableAbleCommandHandler("insult", insult)
 ARISE_HANDLER = DisableAbleCommandHandler("arise", arise)                                      
-YUMEKO_HANDLER = DisableAbleCommandHandler("igris", igris)
+YUMEKO_HANDLER = DisableAbleCommandHandler("yumeko", yumeko)
 TRUTH_HANDLER = DisableAbleCommandHandler("truth", truth)
 DARE_HANDLER = DisableAbleCommandHandler("dare", dare)
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
@@ -253,7 +253,7 @@ TABLE_HANDLER = DisableAbleCommandHandler("table", table)
 
 dispatcher.add_handler(INSULT_HANDLER)
 dispatcher.add_handler(ARISE_HANDLER)                                          
-dispatcher.add_handler(IGRIS_HANDLER)
+dispatcher.add_handler(YUMEKO_HANDLER)
 dispatcher.add_handler(TRUTH_HANDLER)
 dispatcher.add_handler(DARE_HANDLER)
 dispatcher.add_handler(SANITIZE_HANDLER)
