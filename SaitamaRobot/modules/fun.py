@@ -22,7 +22,7 @@ def runs(update: Update, context: CallbackContext):
 
 
 @run_async
-def igris(update: Update, context: CallbackContext):
+def yumeko(update: Update, context: CallbackContext):
     update.effective_message.reply_text(random.choice(fun_strings.IGRIS_STRINGS))
                                                 
 @run_async
@@ -226,7 +226,7 @@ __help__ = """
 • *Games* 🎲 *:*
  • `/truth`*:* Get ready to reveal a surprising truth🤫
  • `/dare`*:* A dare is on way 😈
- • `/igris`*:* Summon up IGRIS
+ • `/yumeko`*:* Awakening of pshycho Demon
  • `/insult`*:* Insult the person
  • `/decide`*:* Randomly answers yes/no/maybe/idk
  • `/toss`*:* Tosses A coin
@@ -236,7 +236,7 @@ __help__ = """
 
 INSULT_HANDLER = DisableAbleCommandHandler("insult", insult)
 ARISE_HANDLER = DisableAbleCommandHandler("arise", arise)                                      
-IGRIS_HANDLER = DisableAbleCommandHandler("igris", igris)
+YUMEKO_HANDLER = DisableAbleCommandHandler("igris", igris)
 TRUTH_HANDLER = DisableAbleCommandHandler("truth", truth)
 DARE_HANDLER = DisableAbleCommandHandler("dare", dare)
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
