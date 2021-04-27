@@ -104,10 +104,10 @@ DARE_STRINGS = (
      )
 
 IGRIS_IMG = (
-     "https://i.imgur.com/WcJPIHp.jpg", 
-     "https://i.imgur.com/7bM0Xoq.jpg", 
-     "https://i.imgur.com/faksrvE.jpg", 
-     "https://i.imgur.com/UjiCJhZ.jpg"
+     "https://i.imgur.com/HwMKx0Z.jpg", 
+     "https://i.imgur.com/mHhK3GO.jpg", 
+     "https://i.imgur.com/Eg2BV3V.jpg", 
+     "https://i.imgur.com/GXmMZ2o.jpg"
 
      ) 
 
@@ -174,17 +174,17 @@ INSULT_STRINGS = [
 ]
 
 IGRIS_STRINGS = (
-      "YES SIR, Command me", 
-      "You Summoned me?", 
-      "First Shadow ARISED!", 
-      "I Only Serve To SUNG-JIN-WU, JUST KIDDING", 
-      "When is our next Mission?", 
-      "*You have Summoned the most powerful Shadow*", 
-      "STOP ARISING ME WITHOUT REASONS", 
+      "YES Human, tell me", 
+      "You remembered me?", 
+      "Pshycho Demon is here!", 
+      "I Only Serve To the Devil, JUST KIDDING", 
+      "When is our next Gamble?", 
+      "*You have Summoned the most Powerful pshycho Demon*", 
+      "STOP calling ME if you don't wanna gamble", 
       "Here we go again", 
-      "IGRIS,*Joined the Chat*", 
+      "Yumeko,*Joined the Gambling Area*", 
       "Yaaaaaaa?", 
-      "IGRIS.EXE STOPPED WORKING", 
+      "Yumeko.EXE STOPPED WORKING", 
       "Okay, Let's Go", 
       "Let's do this", 
       " Boring ", 
@@ -216,7 +216,7 @@ SLAP_SAITAMA_TEMPLATES = (
     ])
 
 SLAP_TEMPLATES = (
-    "{user2} was killed by magic.",
+    "{user2} was killed for loosing gamble.",
     "{user2} starved without pats.",
     "{user2} was knocked into the void by {user1}.",
     "{user2} fainted.",
