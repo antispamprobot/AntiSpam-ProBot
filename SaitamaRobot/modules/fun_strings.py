@@ -459,10 +459,10 @@ EARS = [
 TOSS = (
     "Heads",
     "Tails",
-    "IGRIS ATE THE COIN", 
+    "Yumeko sent coin to Hell", 
 )
 
-DECIDE = ("Yes.", "No.", "Maybe.", " Ask GodLike.","Ask ZekXx.")
+DECIDE = ("Yes.", "No.", "Maybe.", " Ask Devil.","Don't ask me.")
 
 TABLE = ("(╯°□°）╯彡 ┻━┻", "I ran out of tables, will order more.",
          "Go do some work instead of flippin tables.")
