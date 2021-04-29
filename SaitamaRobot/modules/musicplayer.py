@@ -4,7 +4,7 @@ MUSIC PLAYER
 Music player which helps you to plays music in your group's voice chat
 
  Setting up
-1) Add Miko Music ( https://t.me/miko_music_bot ) to your group
+1) Add Miko Music @mikudemonmusicbot and her assistant @mikomusicassisantant to your group
 2) Make bot admin
 3) Start a voice chat
 
@@ -17,7 +17,7 @@ Music player which helps you to plays music in your group's voice chat
 
 
 
-‼️‼️ PLEASE NOTE THIS IS HEAVILY UNSTABLE AND CAN BE STOPPED ANYTIME ‼️‼️
+‼️‼️ PLEASE NOTE THIS IS HEAVILY UNSTABLE AND CAN BE STOPPED ANYTIME and it lags too much ‼️‼️
 """
 
 
