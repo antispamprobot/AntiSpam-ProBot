@@ -271,7 +271,7 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThis person here is the 'King Of Hell' , you shouldn't mess with him."
+        text += "\n\nThis person here is the 'King Of Hell' , you shouldn't mess with him!."
         disaster_level_present = True
     elif user.id in DEV_USERS:
         text += "\n\nThis user is the higher Demon of 'Devils Territory'."
