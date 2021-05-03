@@ -187,7 +187,7 @@ def start(update: Update, context: CallbackContext):
                           [
                               InlineKeyboardButton(
                               text="🍁 Support Group 🍁",
-                              url=f"https://t.me/joinchat/qrVgoJFXuV05ZjFl"),
+                              url=f"https://t.me/yumekojabamisupport"),
                               InlineKeyboardButton(
                               text="✨ Github Link ✨",
                               url="https://github.com/DEVILTG/Yumekojabami")
