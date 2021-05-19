@@ -189,8 +189,8 @@ def start(update: Update, context: CallbackContext):
                               text="🍁 Support Group 🍁",
                               url=f"https://t.me/yumekojabamisupport"),
                               InlineKeyboardButton(
-                              text="✨ Github Link ✨",
-                              url="https://github.com/DEVILTG/Yumekojabami")
+                              text="✨ Download Anime ✨",
+                              url="https://t.me/Devils_Territory")
                           ]])) 
     else:
         update.effective_message.reply_video(
