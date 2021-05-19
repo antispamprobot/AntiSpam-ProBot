@@ -190,7 +190,7 @@ def start(update: Update, context: CallbackContext):
                               url=f"https://t.me/yumekojabamisupport"),
                               InlineKeyboardButton(
                               text="✨ Download Anime ✨",
-                              url="https://t.me/Devils_Territory")
+                              url="https://t.me/Anime_English_Dub_Devil")
                           ]])) 
     else:
         update.effective_message.reply_video(
