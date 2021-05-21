@@ -54,7 +54,7 @@ PM_START_TEXT = """
 Hello {},
 My Name is Yumeko Jabami
 I AM A Pshycho Gambler who loves to gamble on life.
-I will help you manage your group.its easy to handle group with my help.
+I will help you manage your group.
 TO KNOW MY COMMANDS CLICK /help.
 """
 
