@@ -64,3 +64,4 @@ search_engine_parser
 dnspython
 youtube_search
 telegraph
+PyDictionary==2.0.1
