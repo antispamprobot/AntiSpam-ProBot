@@ -5,7 +5,7 @@ import bs4
 import requests
 from telethon import types
 from telethon.tl import functions
-from Jarvis.events import register
+from SaitamaRobot.events import register
 
 langi = "en"
 
