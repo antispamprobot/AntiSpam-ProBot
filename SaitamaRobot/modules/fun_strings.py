@@ -112,10 +112,10 @@ IGRIS_IMG = (
      ) 
 
 CUTVEIN_IMG = (
-     "https://i.imgur.com/InxYGgj.jpg",
-     "https://i.imgur.com/CHoWaCR.jpg",
-     "https://i.imgur.com/07OogIj.jpg",
-     "https://i.imgur.com/OXoWIzQ.jpg"
+     "https://i.imgur.com/oMZKEhh.jpg",
+     "https://i.imgur.com/O6GMp5h.jpg",
+     "https://i.imgur.com/FE2hhCH.jpg",
+     "https://i.imgur.com/HmDi7Cr.jpg"
 
      )
 
