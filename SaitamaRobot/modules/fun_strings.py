@@ -111,6 +111,13 @@ IGRIS_IMG = (
 
      ) 
 
+CUTVEIN_IMG = (
+     "https://i.imgur.com/InxYGgj.jpg",
+     "https://i.imgur.com/CHoWaCR.jpg",
+     "https://i.imgur.com/07OogIj.jpg",
+     "https://i.imgur.com/OXoWIzQ.jpg"
+
+     )
 
 INSULT_STRINGS = [
     "Owww ... Such a stupid idiot.",
