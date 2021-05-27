@@ -35,12 +35,12 @@ def arise(update: Update, context: CallbackContext):
      
 
 @run_async
-def cutvein(update: Update, context: CallbackContext):
+def senpai(update: Update, context: CallbackContext):
     message = update.effective_message
     name = message.reply_to_message.from_user.first_name if message.reply_to_message else message.from_user.first_name
     reply_photo = message.reply_to_message.reply_photo if message.reply_to_message else message.reply_photo
     reply_photo(
-        random.choice(fun_strings.CUTVEIN_IMG), caption=f'*{name} cutted his vein after seeing this cringe! RIP.*')
+        random.choice(fun_strings.CUTVEIN_IMG), caption=f'*{name} here I am for you senpai but I will destroy you..*')
 
 @run_async
 def truth(update: Update, context: CallbackContext):
@@ -239,12 +239,12 @@ __help__ = """
  • `/decide`*:* Randomly answers yes/no/maybe/idk
  • `/toss`*:* Tosses A coin
  • `/roll`*:* Roll a dice & get you a number
- • `/cutvein`*:* Cut your vein because of this cringe and be happy 
+ • `/senpai`*:* call Yumeko senpai to help you 
 """
 
 INSULT_HANDLER = DisableAbleCommandHandler("insult", insult)
 ARISE_HANDLER = DisableAbleCommandHandler("arise", arise)   
-CUTVEIN_HANDLER = DisableAbleCommandHandler("cutvein", cutvein)                                   
+SENPAI_HANDLER = DisableAbleCommandHandler("senpai", senpai)                                   
 IGRIS_HANDLER = DisableAbleCommandHandler("igris", igris)
 TRUTH_HANDLER = DisableAbleCommandHandler("truth", truth)
 DARE_HANDLER = DisableAbleCommandHandler("dare", dare)
@@ -262,7 +262,7 @@ TABLE_HANDLER = DisableAbleCommandHandler("table", table)
 
 dispatcher.add_handler(INSULT_HANDLER)
 dispatcher.add_handler(ARISE_HANDLER)     
-dispatcher.add_handler(CUTVEIN_HANDLER)                                     
+dispatcher.add_handler(SENPAI_HANDLER)                                     
 dispatcher.add_handler(IGRIS_HANDLER)
 dispatcher.add_handler(TRUTH_HANDLER)
 dispatcher.add_handler(DARE_HANDLER)
@@ -281,10 +281,10 @@ dispatcher.add_handler(TABLE_HANDLER)
 __mod_name__ = "Fun"
 __command_list__ = [
     "runs", "slap", "roll", "toss", "shrug", "bluetext", "rlg", "decide",
-    "table", "pat", "sanitize", "cutvein"
+    "table", "pat", "sanitize", "senpai"
 ]
 __handlers__ = [
-    RUNS_HANDLER,IGRIS_HANDLER,ARISE_HANDLER,CUTVEIN_HANDLER,TRUTH_HANDLER, DARE_HANDLER, SLAP_HANDLER, PAT_HANDLER, ROLL_HANDLER, TOSS_HANDLER,
+    RUNS_HANDLER,IGRIS_HANDLER,ARISE_HANDLER,SENAPI_HANDLER,TRUTH_HANDLER, DARE_HANDLER, SLAP_HANDLER, PAT_HANDLER, ROLL_HANDLER, TOSS_HANDLER,
     SHRUG_HANDLER, BLUETEXT_HANDLER, RLG_HANDLER, DECIDE_HANDLER, TABLE_HANDLER,INSULT_HANDLER, 
     SANITIZE_HANDLER
 ]
