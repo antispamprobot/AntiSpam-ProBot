@@ -47,11 +47,11 @@ def love(update: Update, context: CallbackContext):
 
 @run_async
 def kill(update: Update, context: CallbackContext):
-    msg = update.effective_message.reply_text('getting my gun.')
+    msg = update.effective_message.reply_text('getting my gun👿👿.')
     for x in range(EDIT_TIMES_KILL):
         msg.edit_text(KILL_STRING[x % 2])
         time.sleep(EDIT_SLEEP)
-    msg.edit_text('UwU Target killed successfully! *Happy noises*')
+    msg.edit_text('UwU Target killed successfully😈!\n\n\n*Happy noises😈😈*')
 
 __help__ = """
 • `/onichan`*:* Sends a police to arrest your onichan. 
