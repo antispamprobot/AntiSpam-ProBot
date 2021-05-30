@@ -40,7 +40,7 @@ def senpai(update: Update, context: CallbackContext):
     name = message.reply_to_message.from_user.first_name if message.reply_to_message else message.from_user.first_name
     reply_photo = message.reply_to_message.reply_photo if message.reply_to_message else message.reply_photo
     reply_photo(
-        random.choice(fun_strings.CUTVEIN_IMG), caption=f'*{name} here I am for you senpai but I will destroy you..*')
+        random.choice(fun_strings.CUTVEIN_IMG), caption=f'*here I am for you {name} senpai , I will destroy you..*')
 
 @run_async
 def truth(update: Update, context: CallbackContext):
