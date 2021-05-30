@@ -11,6 +11,8 @@ EDIT_SLEEP = 2
 #edit how many times in 'onichan'
 EDIT_TIMES = 5
 
+EDIT_TIMES_KILL = 2
+
 POLICE_SIREN = [
     "🔴🔴🔴⬜️⬜️⬜️🔵🔵🔵\n🔴🔴🔴⬜️⬜️⬜️🔵🔵🔵\n🔴🔴🔴⬜️⬜️⬜️🔵🔵🔵",
     "🔵🔵🔵⬜️⬜️⬜️🔴🔴🔴\n🔵🔵🔵⬜️⬜️⬜️🔴🔴🔴\n🔵🔵🔵⬜️⬜️⬜️🔴🔴🔴"
@@ -46,7 +48,7 @@ def love(update: Update, context: CallbackContext):
 @run_async
 def kill(update: Update, context: CallbackContext):
     msg = update.effective_message.reply_text('getting my gun.')
-    for x in range(EDIT_TIMES):
+    for x in range(EDIT_TIMES_KILL):
         msg.edit_text(KILL_STRING[x % 2])
         time.sleep(EDIT_SLEEP)
     msg.edit_text('UwU Target killed successfully! *Happy noises*')
