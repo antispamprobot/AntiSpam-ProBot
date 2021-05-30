@@ -22,11 +22,8 @@ LOVE_EMOJY = [
 ]
 
 KILL_STRING = [
-    "Pathetic Human Die!\n\n(　･ิω･ิ)︻デ═一-->",
-    "-------------->",
-    "---------->",
-    "(￣ー￣) DEAD! 😈 👿",
-    "👿UwU user killed successful!\n\n*happy noises 👿👿*"
+    "Pathetic Human Die👿!\n\n(　･ิω･ิ)︻デ═一-->\n\n------>\n\n----------->",
+    "---->\n\n(￣ー￣) DEAD😈😈\n\n\nUwU user killed successful!\n\n*happy noises😈😈*"
 ]
 
 @user_admin
