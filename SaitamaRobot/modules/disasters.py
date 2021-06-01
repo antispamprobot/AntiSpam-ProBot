@@ -122,7 +122,7 @@ def addsupreme(
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "Requested SG to take back Commandment of this demon "
+        rt += "Requested DP to take back Commandment of this demon "
         data['sudos'].remove(user_id)
         DRAGONS.remove(user_id)
 
@@ -131,7 +131,7 @@ def addsupreme(
         return ""
 
     if user_id in WOLVES:
-        rt += "Requested SG to promote this war commander to Supreme Demon"
+        rt += "Requested DP to promote this war commander to Supreme Demon"
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -524,22 +524,22 @@ def paradise(update: Update, context: CallbackContext):
 
 
 
-SUDO_HANDLER = CommandHandler(("addcommandment", "addtendemon"), addsudo)
-ADDSUPREME_HANDLER = CommandHandler(("addsupreme", "addsdemon"), addsupport)
-ADDWARLEVEL_HANDLER = CommandHandler(("addwarlevel"), addtiger)
-ADDRACE_HANDLER = CommandHandler(("addrace", "adddemon"), addwhitelist)
-UNSUDO_HANDLER = CommandHandler(("removecommandment", "removecommandment"), removesudo)
+SUDO_HANDLER = CommandHandler(("addcommandment", "addtendemon"), addcommandment)
+ADDSUPREME_HANDLER = CommandHandler(("addsupreme", "addsdemon"), addsupreme)
+ADDWARLEVEL_HANDLER = CommandHandler(("addwarlevel"), addwarlevel)
+ADDRACE_HANDLER = CommandHandler(("addrace", "adddemon"), addrace)
+UNSUDO_HANDLER = CommandHandler(("removecommandment", "removecommandment"), removecommandment)
 REMOVESUPREME_HANDLER = CommandHandler(("removesupreme", "removesupreme"),
-                                   removesupport)
-REMOVEWARCOMMANDER_HANDLER = CommandHandler(("removewarcommander"), removecommander)
-RENOVERACE_HANDLER = CommandHandler(("removerace", "removedemon"),
-                                     removewolve)
+                                   removesupreme)
+REMOVEWARCOMMANDER_HANDLER = CommandHandler(("removewarcommander"), removewarcommander)
+REMOVERACE_HANDLER = CommandHandler(("removerace", "removedemon"),
+                                     removerace)
 
 DEMONRACE_HANDLER = CommandHandler(["demonrace", "racemembers"],
-                                       demonlist)
-WARCOMMANDERS_HANDLER = CommandHandler(["warcommanders"], commanderlist)
-SUPREMEDEMONS_HANDLER = CommandHandler(["supremedemons", "sdemons"], supremelist)
-COMMANDMENTS_HANDLER = CommandHandler(["Commandments", "tendemons"], sudolist)
+                                       demonrace)
+WARCOMMANDERS_HANDLER = CommandHandler(["warcommanders"], warcommanders)
+SUPREMEDEMONS_HANDLER = CommandHandler(["supremedemons", "sdemons"], supremedemons)
+COMMANDMENTS_HANDLER = CommandHandler(["commandments", "tendemons"], commandments)
 PARADISE_HANDLER = CommandHandler(["paradise", "paradise"], paradise)
 
 dispatcher.add_handler(SUDO_HANDLER)
@@ -554,12 +554,11 @@ dispatcher.add_handler(REMOVERACE_HANDLER)
 dispatcher.add_handler(DEMONRACE_HANDLER)
 dispatcher.add_handler(WARCOMMANDERS_HANDLER)
 dispatcher.add_handler(COMMANDMENTS_HANDLER)
-dispatcher.add_handler(SUDOLIST_HANDLER)
+dispatcher.add_handler(COMMANDMENTS_HANDLER)
 dispatcher.add_handler(PARADISE_HANDLER)
 
 __handlers__ = [
     SUDO_HANDLER, ADDSUPREME_HANDLER, ADDWARLEVEL_HANDLER, ADDRACE_HANDLER,
     UNSUDO_HANDLER, REMOVESUPREME_HANDLER, REMOVEWARCOMMANDER_HANDLER, REMOVERACE_HANDLER,
     DEMONRACE_HANDLER, WARCOMMANDERS_HANDLER, COMMANDMENTS_HANDLER,
-    SUDOLIST_HANDLER, PARADISE_HANDLER
-]
+ 
