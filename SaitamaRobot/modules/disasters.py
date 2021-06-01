@@ -524,23 +524,23 @@ def paradise(update: Update, context: CallbackContext):
 
 
 
-SUDO_HANDLER = CommandHandler(("addsudo", "addsrank"), addsudo)
-SUPPORT_HANDLER = CommandHandler(("addsupport", "addarank"), addsupport)
-TIGER_HANDLER = CommandHandler(("addbrank"), addtiger)
-WHITELIST_HANDLER = CommandHandler(("addwhitelist", "addcrank"), addwhitelist)
-UNSUDO_HANDLER = CommandHandler(("removesudo", "removebrank"), removesudo)
-UNSUPPORT_HANDLER = CommandHandler(("removesupport", "removearank"),
+SUDO_HANDLER = CommandHandler(("addcommandment", "addtendemon"), addsudo)
+ADDSUPREME_HANDLER = CommandHandler(("addsupreme", "addsdemon"), addsupport)
+ADDWARLEVEL_HANDLER = CommandHandler(("addwarlevel"), addtiger)
+ADDRACE_HANDLER = CommandHandler(("addrace", "adddemon"), addwhitelist)
+UNSUDO_HANDLER = CommandHandler(("removecommandment", "removecommandment"), removesudo)
+REMOVESUPREME_HANDLER = CommandHandler(("removesupreme", "removesupreme"),
                                    removesupport)
-UNTIGER_HANDLER = CommandHandler(("removebrank"), removetiger)
-UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "removecrank"),
-                                     removewhitelist)
+REMOVEWARCOMMANDER_HANDLER = CommandHandler(("removewarcommander"), removecommander)
+RENOVERACE_HANDLER = CommandHandler(("removerace", "removedemon"),
+                                     removewolve)
 
-WHITELISTLIST_HANDLER = CommandHandler(["whitelistlist", "crank"],
-                                       whitelistlist)
-TIGERLIST_HANDLER = CommandHandler(["brank"], tigerlist)
-SUPPORTLIST_HANDLER = CommandHandler(["supportlist", "arank"], supportlist)
-SUDOLIST_HANDLER = CommandHandler(["sudolist", "srank"], sudolist)
-GUILD_HANDLER = CommandHandler(["guild", "guild"], guild)
+DEMONRACE_HANDLER = CommandHandler(["demonrace", "racemembers"],
+                                       demonlist)
+WARCOMMANDERS_HANDLER = CommandHandler(["warcommanders"], commanderlist)
+SUPREMEDEMONS_HANDLER = CommandHandler(["supremedemons", "sdemons"], supremelist)
+COMMANDMENTS_HANDLER = CommandHandler(["Commandments", "tendemons"], sudolist)
+PARADISE_HANDLER = CommandHandler(["paradise", "paradise"], paradise)
 
 dispatcher.add_handler(SUDO_HANDLER)
 dispatcher.add_handler(SUPPORT_HANDLER)
