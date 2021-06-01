@@ -543,23 +543,23 @@ COMMANDMENTS_HANDLER = CommandHandler(["Commandments", "tendemons"], sudolist)
 PARADISE_HANDLER = CommandHandler(["paradise", "paradise"], paradise)
 
 dispatcher.add_handler(SUDO_HANDLER)
-dispatcher.add_handler(SUPPORT_HANDLER)
-dispatcher.add_handler(TIGER_HANDLER)
-dispatcher.add_handler(WHITELIST_HANDLER)
+dispatcher.add_handler(ADDSUPREME_HANDLER)
+dispatcher.add_handler(ADDWARLEVEL_HANDLER)
+dispatcher.add_handler(ADDRACE_HANDLER)
 dispatcher.add_handler(UNSUDO_HANDLER)
-dispatcher.add_handler(UNSUPPORT_HANDLER)
-dispatcher.add_handler(UNTIGER_HANDLER)
-dispatcher.add_handler(UNWHITELIST_HANDLER)
+dispatcher.add_handler(REMOVESUPREME_HANDLER)
+dispatcher.add_handler(REMOVEWARCOMMANDER_HANDLER)
+dispatcher.add_handler(REMOVERACE_HANDLER)
 
-dispatcher.add_handler(WHITELISTLIST_HANDLER)
-dispatcher.add_handler(TIGERLIST_HANDLER)
-dispatcher.add_handler(SUPPORTLIST_HANDLER)
+dispatcher.add_handler(DEMONRACE_HANDLER)
+dispatcher.add_handler(WARCOMMANDERS_HANDLER)
+dispatcher.add_handler(COMMANDMENTS_HANDLER)
 dispatcher.add_handler(SUDOLIST_HANDLER)
-dispatcher.add_handler(GUILD_HANDLER)
+dispatcher.add_handler(PARADISE_HANDLER)
 
 __handlers__ = [
-    SUDO_HANDLER, SUPPORT_HANDLER, TIGER_HANDLER, WHITELIST_HANDLER,
-    UNSUDO_HANDLER, UNSUPPORT_HANDLER, UNTIGER_HANDLER, UNWHITELIST_HANDLER,
-    WHITELISTLIST_HANDLER, TIGERLIST_HANDLER, SUPPORTLIST_HANDLER,
-    SUDOLIST_HANDLER, GUILD_HANDLER
+    SUDO_HANDLER, ADDSUPREME_HANDLER, ADDWARLEVEL_HANDLER, ADDRACE_HANDLER,
+    UNSUDO_HANDLER, REMOVESUPREME_HANDLER, REMOVEWARCOMMANDER_HANDLER, REMOVERACE_HANDLER,
+    DEMONRACE_HANDLER, WARCOMMANDERS_HANDLER, COMMANDMENTS_HANDLER,
+    SUDOLIST_HANDLER, PARADISE_HANDLER
 ]
