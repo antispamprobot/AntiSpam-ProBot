@@ -135,41 +135,6 @@ def romance(update: Update, context: CallbackContext):
 
 
 @run_async
-def uwu(update: Update, context: CallbackContext):
-    bot = context.bot
-    args = context.args
-    message = update.effective_message
-
-    reply_to = message.reply_to_message if message.reply_to_message else message
-
-    curr_user = html.escape(message.from_user.first_name)
-    user_id = extract_user(message, args)
-
-    if user_id:
-        uwu_user = bot.get_chat(user_id)
-        user1 = curr_user
-        user2 = html.escape(uwu_user.first_name)
-
-    else:
-        user1 = bot.first_name
-        user2 = curr_user
-
-    romance_type = random.choice(("Gif", "Sticker"))
-    if uwu_type == "Gif":
-        try:
-            temp = random.choice(love_strings.UWU_GIFS)
-            reply_to.reply_animation(temp)
-        except BadRequest:
-            uwu_type = "Text"
-
-    if uwu_type == "Sticker":
-        try:
-            temp = random.choice(love_strings.UWU_STICKERS)
-            reply_to.reply_sticker(temp)
-        except BadRequest:
-            uwu_type = "Text"
-
-@run_async
 def owo(update: Update, context: CallbackContext):
     bot = context.bot
     args = context.args
@@ -203,6 +168,42 @@ def owo(update: Update, context: CallbackContext):
             reply_to.reply_sticker(temp)
         except BadRequest:
             owo_type = "Text"
+
+
+@run_async
+def uwu(update: Update, context: CallbackContext):
+    bot = context.bot
+    args = context.args
+    message = update.effective_message
+
+    reply_to = message.reply_to_message if message.reply_to_message else message
+
+    curr_user = html.escape(message.from_user.first_name)
+    user_id = extract_user(message, args)
+
+    if user_id:
+        uwu_user = bot.get_chat(user_id)
+        user1 = curr_user
+        user2 = html.escape(uwu_user.first_name)
+
+    else:
+        user1 = bot.first_name
+        user2 = curr_user
+
+    uwu_type = random.choice(("Gif", "Sticker"))
+    if uwu_type == "Gif":
+        try:
+            temp = random.choice(love_strings.UWU_GIFS)
+            reply_to.reply_animation(temp)
+        except BadRequest:
+            uwu_type = "Text"
+
+    if uwu_type == "Sticker":
+        try:
+            temp = random.choice(love_strings.UWU_STICKERS)
+            reply_to.reply_sticker(temp)
+        except BadRequest:
+            uwu_type = "Text"
 
 
 
