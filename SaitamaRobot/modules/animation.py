@@ -55,7 +55,6 @@ def kill(update: Update, context: CallbackContext):
 
 __help__ = """
 • `/onichan`*:* Sends a police to arrest your onichan. 
-• `/love`*:* Checks Love in your heart weather it's true or fake.
 • `/kill`*:* Kills the targeted person with a animated gun.
 """
 
