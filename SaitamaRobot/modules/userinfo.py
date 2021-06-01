@@ -271,26 +271,26 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThis person here is the 'King Of Hell' , you shouldn't mess with him!."
+        text += "\n\nThis person here is the 'GOD OF WAR' , his cultivation level is in top heavenly level."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThis user is the higher Demon of 'Devils Territory'."
+        text += "\n\nThis user is a 'GODLYDEMON' , Cultivation level of this user is in 8th heavens"
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThe person here is Special Demon of 'Hell'."
+        text += "\n\nThe person here is one of the '10 COMMANDMENTS' , he is in the 6th heavenly level of cultivation."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nThe person here is one of the respected demons of  'Hell'."
+        text += "\n\nThe person have the authority to seal anyones soul , with cultivation level high sky."
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\nThe HUNTER SKILL of this person is 'B-RANK'."
+        text += "\n\nThis user is one of the'WAR-COMMANDERS' , his cultivation level is in 8th ground group."
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\nThe person here is respected by the 'Devil' himself."
+        text += "\n\nThis user is one of the DEMON RACE , cultivation level of this users are in 6th Sky level."
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/IGRISROBOT_SUPPORT/2">?</a>]'.format(
+        text += ' [<a href="https://t.me/YumekoJabamiUpdates/5">?</a>]'.format(
             bot.username)
 
     try:
