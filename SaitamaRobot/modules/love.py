@@ -209,6 +209,7 @@ def owo(update: Update, context: CallbackContext):
 __help__ = """
  • `/cuddle`*:* cuddle someone by replying to his/her message or get cuddled
  • `/hug`*:* hug someone or get hugged by Yumeko
+ • `/love`*:* Checks Love in your heart weather it's true or fake
  • `/kiss`*:* kiss someone or get kissed 
  • `/pat`*:* pat someone or get patted by Yumeko
  • `/flirt`*:* Yumeko will flirt to the replied person or with you
