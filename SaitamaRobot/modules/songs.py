@@ -10,7 +10,8 @@ from pyrogram import filters
 from SaitamaRobot import pgram
 from youtube_search import YoutubeSearch
 from SaitamaRobot.pyroerror import capture_err
-
+from SaitamaRobot.modules.disable import DisableAbleCommandHandler
+from SaitamaRobot import dispatcher
 
 def time_to_seconds(time):
     stringt = str(time)
@@ -78,5 +79,12 @@ __help__= """
 /song- To download the required song from YouTube
 """
 
+SONG_HANDLER = DisableAbleCommandHandler("song", song)
+
+dispatcher.add_handler(SONG_HANDLER)
 
 __mod_name__ = "Song"
+
+_handlers_ = [
+SONG_HANDLER 
+]
