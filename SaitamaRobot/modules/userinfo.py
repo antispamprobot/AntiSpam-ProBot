@@ -107,7 +107,7 @@ def hpmanager(user):
 
 def make_bar(per):
     done = min(round(per / 10), 10)
-    return "🔹" * done + "▪️" * (10 - done)
+    return "▰" * done + "▱" * (10 - done)
 
 
 @run_async
@@ -128,7 +128,7 @@ def get_id(update: Update, context: CallbackContext):
             msg.reply_text(
                 f"<b>Telegram ID:</b>,"
                 f"• {html.escape(user2.first_name)} - <code>{user2.id}</code>.\n"
-                f"• {html.escape(user1.first_name)} - <code>{user1.id}</code>.",
+   ▰              f"• {html.escape(user1.first_name)} - <code>{user1.id}</code>.",
                 parse_mode=ParseMode.HTML)
 
         else:
