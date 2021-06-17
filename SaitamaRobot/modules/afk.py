@@ -46,7 +46,7 @@ def no_longer_afk(update: Update, context: CallbackContext):
         try:
             options = [
                 '{} is here!', '{} is still alive!', '{} wants to gamble again!',
-                '{} don't loose this time!', '{} try not to loose!', '{} is finally here!',
+                '{} dont loose this time!', '{} try not to loose!', '{} is finally here!',
                 'Welcome back to life! {}', 'Where is {}?\nIn the gambling!'
             ]
             chosen_option = random.choice(options)
