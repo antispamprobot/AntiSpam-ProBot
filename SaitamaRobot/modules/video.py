@@ -234,11 +234,4 @@ async def download_video(v_url):
         os.remove(f"{rip_data['id']}.mp4")
         await rkp.delete()
 
-__help__ = """
- *You can either enter just the song name or both the artist and song
-  name. *
- - `/video` <songname artist(optional)>: uploads the video song in it's best quality available
- - `/lyrics` <song>: returns the lyrics of that song.
-"""
-
-__mod_name__ = "YT Video"
+ 
