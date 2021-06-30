@@ -53,10 +53,6 @@ def kill(update: Update, context: CallbackContext):
         time.sleep(EDIT_SLEEP)
     msg.edit_text('UwU Target killed successfully😈!\n\n\n*Happy noises😈😈*')
 
-__help__ = """
-• `/onichan`*:* Sends a police to arrest your onichan. 
-• `/kill`*:* Kills the targeted person with a animated gun.
-"""
 
 ONICHAN_HANDLER = DisableAbleCommandHandler("onichan", onichan)
 LOVE_HANDLER = DisableAbleCommandHandler("love", love)
@@ -65,6 +61,5 @@ dispatcher.add_handler(ONICHAN_HANDLER)
 dispatcher.add_handler(LOVE_HANDLER)
 dispatcher.add_handler(KILL_HANDLER)
 
-__mod_name__ = "Animation"
 __command_list__ = ["onichan", "love", "kill"]
 __handlers__ = [ONICHAN_HANDLER , LOVE_HANDLER , KILL_HANDLER]
