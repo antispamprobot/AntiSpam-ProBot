@@ -24,6 +24,7 @@ ANIMEQUOTES_HANDLER = DisableAbleCommandHandler("animequotes", animequotes)
 
 dispatcher.add_handler(ANIMEQUOTES_HANDLER)
 
+__mod_name__ = "animequote"
 __command_list__ = [
     "animequotes"
 ]
