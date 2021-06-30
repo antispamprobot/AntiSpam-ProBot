@@ -52,9 +52,11 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hello {},
-My Name is Yumeko Jabami
-I AM A Pshycho Gambler who loves to gamble on life.
-I will help you manage your group.
+*𝓂𝓎  𝓃𝒶𝓂ℯ  𝒾𝓈  𝓎𝓊𝓂ℯ𝓀ℴ  𝒿𝒶𝒷𝒶𝓂𝒾
+𝒾  𝒶𝓂  𝒶  𝓅𝓈𝒽𝓎𝒸𝒽ℴ  ℊ𝒶𝓂𝒷𝓁ℯ𝓇  𝓌𝒽ℴ  𝓁ℴ𝓋ℯ𝓈  𝓉ℴ  ℊ𝒶𝓂𝒷𝓁ℯ  ℴ𝓃  𝓁𝒾𝒻ℯ.
+𝒾  𝓌𝒾𝓁𝓁  𝒽ℯ𝓁𝓅  𝓎ℴ𝓊  𝓂𝒶𝓃𝒶ℊℯ  𝓎ℴ𝓊𝓇  ℊ𝓇ℴ𝓊𝓅.
+
+𝒾  𝓌𝒶𝓈  𝓈𝓅ℯ𝒸𝒾𝒶𝓁𝓁𝓎  𝒸𝓇ℯ𝒶𝓉ℯ𝒹  𝒻ℴ𝓇  𝒹ℯ𝓋𝒾𝓁'𝓈  𝓉ℯ𝓇𝓇𝒾𝓉ℴ𝓇𝓎  .*
 TO KNOW MY COMMANDS CLICK /help.
 """
 
