@@ -180,13 +180,13 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(                   
                           [[
                               InlineKeyboardButton(
-                              text="|Add Yumeko To Your Group|",
+                              text="[Add Yumeko To Your Group]",
                               url="t.me/{}?startgroup=true".format(
                                   context.bot.username))
                           ], 
                           [
                               InlineKeyboardButton(
-                              text="|Support Group|",
+                              text="[Support Group]",
                               url=f"https://t.me/tae_support"),
                               InlineKeyboardButton(
                               text="|Download Anime|",
