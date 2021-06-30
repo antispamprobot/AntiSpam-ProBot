@@ -61,5 +61,6 @@ dispatcher.add_handler(ONICHAN_HANDLER)
 dispatcher.add_handler(LOVE_HANDLER)
 dispatcher.add_handler(KILL_HANDLER)
 
+__mod_name__ = "animation"
 __command_list__ = ["onichan", "love", "kill"]
 __handlers__ = [ONICHAN_HANDLER , LOVE_HANDLER , KILL_HANDLER]
