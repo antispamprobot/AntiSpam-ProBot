@@ -481,16 +481,16 @@ def lined(update, context):
     else:
         message.reply_text(string)
 __help__ = """
- - /weebify <text>: weebify your text!
- - /bubble <text>: bubble your text!
- - /fbubble <text>: bubble-filled your text!
- - /square <text>: square your text!
- - /fsquare <text>: square-filled your text!
- - /blue <text>: bluify your text!
- - /latin <text>: latinify your text!
- - /lined <text>: lined your text!
+ • /weebify <text>: weebify your text
+ • /bubble <text>: bubble your text
+ • /fbubble <text>: bubble-filled your text
+ • /square <text>: square your text
+ • /fsquare <text>: square-filled your text
+ • /blue <text>: bluify your text
+ • /latin <text>: latinify your text
+ • /lined <text>: lined your text
 """
-__mod_name__ = "StyleText"
+__mod_name__ = "🄳🄴🅂🄸🄶🄽🅂"
 
 WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify)
 BUBBLE_HANDLER = DisableAbleCommandHandler("bubble", bubble)
