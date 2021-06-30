@@ -194,15 +194,15 @@ def start(update: Update, context: CallbackContext):
                           ], 
                           [
                               InlineKeyboardButton(
-                              text="|Updates|",
+                              text="[Updates]",
                               url=f"https://t.me/YumekoJabamiUpdates"),
                               InlineKeyboardButton(
-                              text="|Gban|",
+                              text="[Gban]",
                               url="https://t.me/yumekojabami_gban_logs")
                           ], 
                           [
                               InlineKeyboardButton(
-                              text="|Devil's Territory|",
+                              text="[Devil's Territory]",
                               url=f"https://t.me/Devils_Territory")
                           ]])) 
     else:
