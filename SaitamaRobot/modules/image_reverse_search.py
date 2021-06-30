@@ -178,13 +178,6 @@ def scam(imgspage, lim):
 
     return imglinks
 
-__help__ = f"""
-*Commands:* 
-
-• /reverse: Does a reverse image search of the media which it was replied to.
-
-Reports bugs at @IGRISBOTSUPPORT
-"""
 
 __mod_name__ = "Image Search"
 
