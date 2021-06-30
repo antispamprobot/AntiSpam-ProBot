@@ -20,20 +20,6 @@ PHOTO = 'https://i.imgur.com/UjiCJhZ.jpg'
 def runs(update: Update, context: CallbackContext):
     update.effective_message.reply_text(random.choice(fun_strings.RUN_STRINGS))
 
-
-@run_async
-def igris(update: Update, context: CallbackContext):
-    update.effective_message.reply_text(random.choice(fun_strings.IGRIS_STRINGS))
-                                                
-@run_async
-def arise(update: Update, context: CallbackContext):
-    message = update.effective_message
-    name = message.reply_to_message.from_user.first_name if message.reply_to_message else message.from_user.first_name
-    reply_photo = message.reply_to_message.reply_photo if message.reply_to_message else message.reply_photo
-    reply_photo(
-        random.choice(fun_strings.IGRIS_IMG), caption=f'*Command Me {name}*')
-     
-
 @run_async
 def senpai(update: Update, context: CallbackContext):
     message = update.effective_message
@@ -220,34 +206,33 @@ def table(update: Update, context: CallbackContext):
     reply_text(random.choice(fun_strings.TABLE))
 
 __help__ = """
- • `/runs`*:* reply a random string from an array of replies
- • `/slap`*:* slap a user, or get slapped if not a reply 🌝
- • `/shrug`*:* get shrug XD
- • `/table`*:* get flip/unflip :v
- • `/bluetext`*:* check urself :V
- • `/rlg`*:* Join ears,nose,mouth and create an emo ;-;
- • `/shout <keyword>`*:* write anything you want to give loud shout
- • `/weebify <text>`*:* returns a weebified text
- • `/sanitize`*:* always use this before `/pat` or any contact
- • `/pat`*:* pats a user, or get patted (^-^)
- • `/uwu`*:* gives a UwU reaction with girf or sticker
- • `/owo`*:* gives a OwO reaction with gif or sticket
+ • /runs*:* reply a random string from an array of replies
+ • /slap*:* slap a user, or get slapped if not a reply 🌝
+ • /shrug*:* get shrug XD
+ • /table*:* get flip/unflip :v
+ • /bluetext*:* check urself :V
+ • /rlg*:* Join ears,nose,mouth and create an emo ;-;
+ • /shout <keyword>*:* write anything you want to give loud shout
+ • /weebify <text>*:* returns a weebified text
+ • /sanitize`l*:* always use this before `/pat` or any contact
+ • /pat*:* pats a user, or get patted (^-^)
+ • /uwu*:* gives a UwU reaction with girf or sticker
+ • /owo*:* gives a OwO reaction with gif or sticket
+ • /onichan*:* Sends a police to arrest your onichan
+ • /kill*:* Kills the targeted person with a animated gun
   - - - - - - - - - -
 • *Games* 🎲 *:*
- • `/truth`*:* Get ready to reveal a surprising truth🤫
- • `/dare`*:* A dare is on way 😈
- • `/igris`*:* Summon up IGRIS
- • `/insult`*:* Insult the person
- • `/decide`*:* Randomly answers yes/no/maybe/idk
- • `/toss`*:* Tosses A coin
- • `/roll`*:* Roll a dice & get you a number
- • `/senpai`*:* call Yumeko senpai to help you 
+ • /truth*:* Get ready to reveal a surprising truth🤫
+ • /dare*:* A dare is on way 😈
+ • /insult*:* Insult the person
+ • /decide*:* Randomly answers yes/no/maybe/idk
+ • /toss*:* Tosses A coin
+ • /roll*:* Roll a dice & get you a number
+ • /senpai*:* call Yumeko senpai to help you 
 """
 
 INSULT_HANDLER = DisableAbleCommandHandler("insult", insult)
-ARISE_HANDLER = DisableAbleCommandHandler("arise", arise)   
 SENPAI_HANDLER = DisableAbleCommandHandler("senpai", senpai)                                   
-IGRIS_HANDLER = DisableAbleCommandHandler("igris", igris)
 TRUTH_HANDLER = DisableAbleCommandHandler("truth", truth)
 DARE_HANDLER = DisableAbleCommandHandler("dare", dare)
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
@@ -262,10 +247,8 @@ RLG_HANDLER = DisableAbleCommandHandler("rlg", rlg)
 DECIDE_HANDLER = DisableAbleCommandHandler("decide", decide)
 TABLE_HANDLER = DisableAbleCommandHandler("table", table)
 
-dispatcher.add_handler(INSULT_HANDLER)
-dispatcher.add_handler(ARISE_HANDLER)     
+dispatcher.add_handler(INSULT_HANDLER)    
 dispatcher.add_handler(SENPAI_HANDLER)                                     
-dispatcher.add_handler(IGRIS_HANDLER)
 dispatcher.add_handler(TRUTH_HANDLER)
 dispatcher.add_handler(DARE_HANDLER)
 dispatcher.add_handler(SANITIZE_HANDLER)
