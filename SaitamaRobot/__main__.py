@@ -61,7 +61,7 @@ TO KNOW MY COMMANDS CLICK /help.
 HELP_STRINGS = """
 Hey there! My name is *{}*.
 I'm a Gambler who loves to play games of life ,I will help you manage your groups! Have a look at the following for an idea of some of \
-the things I can help you with.
+the things I can help you with. I Specially work for Devil's Territory.
 
 *Main* commands available:
  • /help: PM's you this message.
@@ -180,17 +180,30 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(                   
                           [[
                               InlineKeyboardButton(
-                              text="🔥Add Yumeko To Your Group🔥",
+                              text="|Add Yumeko To Your Group|",
                               url="t.me/{}?startgroup=true".format(
                                   context.bot.username))
                           ], 
                           [
                               InlineKeyboardButton(
-                              text="🍁 Support Group 🍁",
-                              url=f"https://t.me/yumekojabamisupport"),
+                              text="|Support Group|",
+                              url=f"https://t.me/tae_support"),
                               InlineKeyboardButton(
-                              text="✨ Download Anime ✨",
+                              text="|Download Anime|",
                               url="https://t.me/Anime_English_Dub_Devil")
+                          ], 
+                          [
+                              InlineKeyboardButton(
+                              text="|Updates|",
+                              url=f"https://t.me/YumekoJabamiUpdates"),
+                              InlineKeyboardButton(
+                              text="|Gban|",
+                              url="https://t.me/yumekojabami_gban_logs")
+                          ], 
+                          [
+                              InlineKeyboardButton(
+                              text="|Devil's Territory|",
+                              url=f"https://t.me/Devils_Territory")
                           ]])) 
     else:
         update.effective_message.reply_video(
