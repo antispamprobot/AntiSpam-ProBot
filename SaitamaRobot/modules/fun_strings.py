@@ -103,14 +103,6 @@ DARE_STRINGS = (
 
      )
 
-IGRIS_IMG = (
-     "https://i.imgur.com/HwMKx0Z.jpg", 
-     "https://i.imgur.com/mHhK3GO.jpg", 
-     "https://i.imgur.com/Eg2BV3V.jpg", 
-     "https://i.imgur.com/GXmMZ2o.jpg"
-
-     ) 
-
 CUTVEIN_IMG = (
      "https://i.imgur.com/oMZKEhh.jpg",
      "https://i.imgur.com/O6GMp5h.jpg",
@@ -179,25 +171,6 @@ INSULT_STRINGS = [
     "Hit Uranium with a slow moving neutron in your presence. It will be a worthwhile experience.",
     "You can be the first person to step on sun. Have a try.",
 ]
-
-IGRIS_STRINGS = (
-      "YES Human, tell me", 
-      "You remembered me?", 
-      "Pshycho Demon is here!", 
-      "I Only Serve To the Devil, JUST KIDDING", 
-      "When is our next Gamble?", 
-      "*You have Summoned the most Powerful pshycho Demon*", 
-      "STOP calling ME if you don't wanna gamble", 
-      "Here we go again", 
-      "Yumeko,*Joined the Gambling Area*", 
-      "Yaaaaaaa?", 
-      "Yumeko.EXE STOPPED WORKING", 
-      "Okay, Let's Go", 
-      "Let's do this", 
-      " Boring ", 
-      "Hold up, Coming"
-    
-      ) 
      
 IGRIS_PHOTO = (
     "https://wallpapercave.com/wp/wp2164441.jpg") 
