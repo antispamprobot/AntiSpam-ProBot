@@ -233,5 +233,3 @@ async def download_video(v_url):
                          f"{rip_data['title']}.mp4")))
         os.remove(f"{rip_data['id']}.mp4")
         await rkp.delete()
-
- 
