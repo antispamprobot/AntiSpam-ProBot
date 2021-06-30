@@ -450,12 +450,12 @@ __help__ = """
  
  *Remote commands*
  
- •  `/rban user group`*:* Remote ban
- • `/runban user group`*:* Remote un-ban
- •  `/rpunch user group`*:* Remote punch
- •  `/rmute user group`*:* Remote mute
- •  `/runmute user group`*:* Remote un-mute
- •  `/ginfo username/link/ID`*:* Pulls info panel for entire group
+ •  /rban user group*:* Remote ban
+ • /runban user group*:* Remote un-ban
+ •  /rpunch user group*:* Remote punch
+ •  /rmute user group*:* Remote mute
+ •  /runmute user group*:* Remote un-mute
+ •  /ginfo username/link/ID*:* Pulls info panel for entire group
 
 """
 
@@ -479,7 +479,7 @@ dispatcher.add_handler(PROMOTE_HANDLER)
 dispatcher.add_handler(DEMOTE_HANDLER)
 dispatcher.add_handler(SET_TITLE_HANDLER)
 
-__mod_name__ = "Admin"
+__mod_name__ = "🄰🄳🄼🄸🄽"
 __command_list__ = ["adminlist", "admins", "invitelink", "promote", "demote"]
 __handlers__ = [
     ADMINLIST_HANDLER, PIN_HANDLER, UNPIN_HANDLER, INVITE_HANDLER,
