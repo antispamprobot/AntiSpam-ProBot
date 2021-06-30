@@ -208,14 +208,14 @@ def uwu(update: Update, context: CallbackContext):
 
 
 __help__ = """
- • `/cuddle`*:* cuddle someone by replying to his/her message or get cuddled
- • `/hug`*:* hug someone or get hugged by Yumeko
- • `/love`*:* Checks Love in your heart weather it's true or fake
- • `/kiss`*:* kiss someone or get kissed 
- • `/pat`*:* pat someone or get patted by Yumeko
- • `/flirt`*:* Yumeko will flirt to the replied person or with you
- • `/lewd`*:* Yumeko will act lewd with you or with the replied person
- • `/romance`*:* Yumeko will act all romantic with you or replied person
+ • /cuddle*:* cuddle someone by replying to his/her message or get cuddled
+ • /hug*:* hug someone or get hugged by Yumeko
+ • /love*:* Checks Love in your heart weather it's true or fake
+ • /kiss*:* kiss someone or get kissed 
+ • /pat*:* pat someone or get patted by Yumeko
+ • /flirt*:* Yumeko will flirt to the replied person or with you
+ • /lewd*:* Yumeko will act lewd with you or with the replied person
+ • /romance*:* Yumeko will act all romantic with you or replied person
 """
 
 CUDDLE_HANDLER = DisableAbleCommandHandler("cuddle", cuddle)
@@ -232,7 +232,7 @@ dispatcher.add_handler(ROMANCE_HANDLER)
 dispatcher.add_handler(UWU_HANDLER)
 dispatcher.add_handler(OWO_HANDLER)                               
  
-__mod_name__ = "Love"
+__mod_name__ = "🄻🄾🅅🄴"
 __command_list__ = [
     "cuddle", "flirt", "lewd", "romance", "uwu", "owo"
 ]
