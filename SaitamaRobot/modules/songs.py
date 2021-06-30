@@ -76,14 +76,15 @@ def song(client, message):
         print(e)
 
 __help__= """
-/song- To download the required song from YouTube
+• /song - To download the required song from YouTube
+• /video - To download the required video from youtube
 """
 
 SONG_HANDLER = DisableAbleCommandHandler("song", song)
 
 dispatcher.add_handler(SONG_HANDLER)
 
-__mod_name__ = "Song"
+__mod_name__ = "🅂🄾🄽🄶"
 
 _handlers_ = [
 SONG_HANDLER 
