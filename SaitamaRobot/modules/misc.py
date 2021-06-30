@@ -79,17 +79,17 @@ def markdown_help(update: Update, context: CallbackContext):
 __help__ = """
 *Available commands:*
 *Markdown:*
- • `/markdownhelp`*:* quick summary of how markdown works in telegram - can only be called in private chats
+ • /markdownhelp*:* quick summary of how markdown works in telegram - can only be called in private chats
 *Paste:*
- • `/paste`*:* Saves replied content to `nekobin.com` and replies with a url
+ • /paste*:* Saves replied content to `nekobin.com` and replies with a url
 *React:*
- • `/react`*:* Reacts with a random reaction 
+ • /react*:* Reacts with a random reaction 
 *Urban Dictonary:*
- • `/ud <word>`*:* Type the word or expression you want to search use
+ • /ud <word>*:* Type the word or expression you want to search use
 *Wikipedia:*
- • `/wiki <query>`*:* wikipedia your query
+ • /wiki <query>*:* wikipedia your query
 *Currency converter:* 
- • `/cash`*:* currency converter
+ • /cash*:* currency converter
 Example:
  `/cash 1 USD INR`  
       _OR_
@@ -103,7 +103,7 @@ MD_HELP_HANDLER = CommandHandler("markdownhelp", markdown_help)
 dispatcher.add_handler(ECHO_HANDLER)
 dispatcher.add_handler(MD_HELP_HANDLER)
 
-__mod_name__ = "Extras"
+__mod_name__ = "🄴🅇🅃🅁🄰🅂"
 __command_list__ = ["id", "echo"]
 __handlers__ = [
     ECHO_HANDLER,
