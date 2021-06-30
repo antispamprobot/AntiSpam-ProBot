@@ -209,7 +209,7 @@ def start(update: Update, context: CallbackContext):
         update.effective_message.reply_video(
                YUMEKOIMGSTART)
         update.effective_message.reply_text(
-            "I'm online!\n<b>Up since:</b> <code>{}</code>".format(uptime),
+            "I'm ready to gamble!\n<b>Up since:</b> <code>{}</code>".format(uptime),
             parse_mode=ParseMode.HTML)
 
 
