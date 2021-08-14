@@ -232,7 +232,7 @@ dispatcher.add_handler(ROMANCE_HANDLER)
 dispatcher.add_handler(UWU_HANDLER)
 dispatcher.add_handler(OWO_HANDLER)                               
  
-__mod_name__ = "🄻🄾🅅🄴"
+__mod_name__ = "|Love|"
 __command_list__ = [
     "cuddle", "flirt", "lewd", "romance", "uwu", "owo"
 ]
