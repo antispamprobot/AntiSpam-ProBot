@@ -38,7 +38,7 @@ def warn(user: User,
          message: Message,
          warner: User = None) -> str:
     if is_user_admin(chat, user.id):
-        # message.reply_text("Damn admins, They are too far to be One Punched!")
+        # message.reply_text("all this torture will unwind , take your time to run and hide I will catch all the time")
         return
 
     if user.id in TIGERS:
@@ -71,14 +71,14 @@ def warn(user: User,
         if soft_warn:  # punch
             chat.unban_member(user.id)
             reply = (
-                f"<code>❕</code><b>Punch Event</b>\n"
+                f"<code>❕</code><b>Punch Event\nTake your time to run and flee , your death is written in your destiny</b>\n"
                 f"<code> </code><b>•  User:</b> {mention_html(user.id, user.first_name)}\n"
                 f"<code> </code><b>•  Count:</b> {limit}")
 
         else:  # ban
             chat.kick_member(user.id)
             reply = (
-                f"<code>❕</code><b>Ban Event</b>\n"
+                f"<code>❕</code><b>Ban Event\nwe hope you enjoy the show within your grave down</b>\n"
                 f"<code> </code><b>•  User:</b> {mention_html(user.id, user.first_name)}\n"
                 f"<code> </code><b>•  Count:</b> {limit}")
 
@@ -101,7 +101,7 @@ def warn(user: User,
         ]])
 
         reply = (
-            f"<code>❕</code><b>Warn Event</b>\n"
+            f"<code>❕</code><b>Warn Event\nlets try to make it right we don't wanna start a fight</b>\n"
             f"<code> </code><b>•  User:</b> {mention_html(user.id, user.first_name)}\n"
             f"<code> </code><b>•  Count:</b> {num_warns}/{limit}")
         if reason:
