@@ -26,7 +26,7 @@ async def hmm(event):
     await event.reply(k)
 
 
-__mod_name__ = "🅂🄴🄲🅁🄴🅃  🄲🄾🄳🄴"
+__mod_name__ = "Hide/Unhide"
 
 __help__ = """
  • /encrypt*:* Encrypts The Given Text
