@@ -2111,7 +2111,7 @@ def fed_user_help(update: Update, context: CallbackContext):
         parse_mode=ParseMode.MARKDOWN)
 
 
-__mod_name__ = "Federation"
+__mod_name__ = "|Federation|"
 
 __help__ = """
 Everything is fun, until a spammer starts entering your group, and you have to block it. Then you need to start banning more, and more, and it hurts.
