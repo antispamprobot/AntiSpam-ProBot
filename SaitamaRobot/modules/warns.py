@@ -101,7 +101,7 @@ def warn(user: User,
         ]])
 
         reply = (
-            f"<code>❕</code><b>Warn Event\nlets try to make it right we don't wanna start a fight</b>\n"
+            f"<code>❕</code><b>Warn Event</b>\n"
             f"<code> </code><b>•  User:</b> {mention_html(user.id, user.first_name)}\n"
             f"<code> </code><b>•  Count:</b> {num_warns}/{limit}")
         if reason:
