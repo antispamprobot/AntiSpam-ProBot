@@ -52,7 +52,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hello {},
-*I'm AntiSpam360.
+I'm AntiSpam360.
 I am the most reconcilable bot for group managements,
 just add me in group with full rights, I'll remove all spammers
 and check out many more tools by sending /help
