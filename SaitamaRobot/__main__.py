@@ -52,23 +52,20 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hello {},
-*𝓂𝓎  𝓃𝒶𝓂ℯ  𝒾𝓈  𝓎𝓊𝓂ℯ𝓀ℴ  𝒿𝒶𝒷𝒶𝓂𝒾
-𝒾  𝒶𝓂  𝒶  𝓅𝓈𝒽𝓎𝒸𝒽ℴ  ℊ𝒶𝓂𝒷𝓁ℯ𝓇  𝓌𝒽ℴ  𝓁ℴ𝓋ℯ𝓈  𝓉ℴ  ℊ𝒶𝓂𝒷𝓁ℯ  ℴ𝓃  𝓁𝒾𝒻ℯ.
-𝒾  𝓌𝒾𝓁𝓁  𝒽ℯ𝓁𝓅  𝓎ℴ𝓊  𝓂𝒶𝓃𝒶ℊℯ  𝓎ℴ𝓊𝓇  ℊ𝓇ℴ𝓊𝓅.
+*I'm AntiSpam360.
+I am the most reconcilable bot for group managements,
+just add me in group with full rights, I'll remove all spammers
+and check out many more tools by sending /help
 
-𝒾  𝓌𝒶𝓈  𝓈𝓅ℯ𝒸𝒾𝒶𝓁𝓁𝓎  𝒸𝓇ℯ𝒶𝓉ℯ𝒹  𝒻ℴ𝓇  𝒹ℯ𝓋𝒾𝓁'𝓈  𝓉ℯ𝓇𝓇𝒾𝓉ℴ𝓇𝓎  .*
-TO KNOW MY COMMANDS CLICK /help.
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a Gambler who loves to play games of life ,I will help you manage your groups! Have a look at the following for an idea of some of \
-the things I can help you with. I Specially work for Devil's Territory.
+I am the most reconcilable bot for group managements ,I will help you manage your groups! Have a look at the following for an idea of some of \
+the things I can help you with.
 
 *Main* commands available:
  • /help: PM's you this message.
- • /help <module name>: PM's you info about that module.
- • /donate: information on how to donate!
  • /settings:
    • in PM: will send you your settings for all supported modules.
    • in a group: will redirect you to pm, with all that chat's settings.
@@ -80,11 +77,9 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/3594cdbeb38f445d205a0.mp4"
-YUMEKOIMGSTART = "https://telegra.ph/file/c835ca34ab94668ac4f0e.mp4"
+ANTISPAM360IMGSTART = "https://telegra.ph/file/312f6043440d34f5f224d.jpg"
 
-DONATE_STRING = """donate to the original writer of the Base code, Paul
-There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+DONATE_STRING = 🇮🇳
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -182,30 +177,22 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(                   
                           [[
                               InlineKeyboardButton(
-                              text="🔥Add Yumeko To Your Group🔥",
+                              text="Add AntiSpam360 To Your Group",
                               url="t.me/{}?startgroup=true".format(
                                   context.bot.username))
                           ], 
                           [
                               InlineKeyboardButton(
-                              text="⚙️Support Group⚙️",
-                              url=f"https://t.me/tae_support"),
+                              text="Support Group",
+                              url=f"https://t.me/AntiSpamSupport"),
                               InlineKeyboardButton(
-                              text="📣Download Anime📣",
+                              text="GBan Logs",
                               url="https://t.me/Anime_English_Dub_Devil")
                           ], 
                           [
                               InlineKeyboardButton(
-                              text="🔔Updates🔔",
-                              url=f"https://t.me/YumekoJabamiUpdates"),
-                              InlineKeyboardButton(
-                              text="🪦Gban🪦",
-                              url="https://t.me/yumekojabami_gban_logs")
-                          ], 
-                          [
-                              InlineKeyboardButton(
-                              text="🎊Devil's Territory🎊",
-                              url=f"https://t.me/Devils_Territory")
+                              text="Updates",
+                              url=f"https://t.me/AntiSpamUpdates"),
                           ]])) 
     else:
         update.effective_message.reply_video(
