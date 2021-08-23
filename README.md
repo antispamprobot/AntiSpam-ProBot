@@ -31,7 +31,7 @@ Turn on worker dyno (Don't worry It's free :D) & Webhook
 Now send the bot /start, If it doesn't respond go to https://dashboard.heroku.com/apps/(app-name)/settings and remove webhook and port.
 ```
 
-  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/antispamprobot/Yumekojabami) 
+  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/antispamprobot/AntiSpam-ProBot) 
 
 </details>  
 <details>
@@ -197,7 +197,7 @@ You can use [nssm](https://nssm.cc/usage) to install the bot as service on windo
 Make sure to edit the start and restart bats to your needs. 
 Note: the restart bat requires that User account control be disabled.
 
-For queries or any issues regarding the bot please open an issue ticket or visit us at [IGRIS BOT SUPPORT](https://t.me/IGRISBOTSUPPORT)
+For queries or any issues regarding the bot please open an issue ticket or visit us at [AntiSpam Support](https://t.me/AntiSpamSupport)
 ## How to setup on Heroku 
 For starters click on this button 
 
@@ -210,4 +210,4 @@ This repo was just revamped to suit an Anime-centric community. All original cre
 
 Any other authorship/credits can be seen through the commits.
 
-Should any be missing kindly let us know at [Devil's Territory](https://t.me/joinchat/SSYHLu5SbWEJRxjl) or simply submit a pull request on the readme.
+Should any be missing kindly let us know at [AntiSpam Support](https://t.me/AntiSpamSupport) or simply submit a pull request on the readme.
