@@ -77,6 +77,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
+
 ANTISPAM360IMGSTART = "https://telegra.ph/file/312f6043440d34f5f224d.jpg"
 
 IMPORTED = {}
@@ -169,7 +170,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_animation(
-                SAITAMA_IMG,
+                ANTISPAM360IMGSTART,
                 caption=PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(context.bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(                   
@@ -193,10 +194,10 @@ def start(update: Update, context: CallbackContext):
                               url=f"https://t.me/AntiSpamUpdates"),
                           ]])) 
     else:
-        update.effective_message.reply_video(
-               YUMEKOIMGSTART)
+        update.effective_message.reply_image(
+               ANTISPAM360IMGSTART)
         update.effective_message.reply_text(
-            "I'm ready to gamble!\n<b>Up since:</b> <code>{}</code>".format(uptime),
+            "I'm alive!\n<b>Up since:</b> <code>{}</code>".format(uptime),
             parse_mode=ParseMode.HTML)
 
 
