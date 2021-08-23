@@ -79,8 +79,6 @@ And the following:
 
 ANTISPAM360IMGSTART = "https://telegra.ph/file/312f6043440d34f5f224d.jpg"
 
-DONATE_STRING = 🇮🇳
-
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
