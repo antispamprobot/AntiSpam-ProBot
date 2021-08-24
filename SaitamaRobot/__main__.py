@@ -51,12 +51,10 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello {},
-I'm AntiSpam360.
+Hello {}, I'm AntiSpam360!
 I am the most reconcilable bot for group managements,
 just add me in group with full rights, I'll remove all spammers
 and check out many more tools by sending /help
-
 """
 
 HELP_STRINGS = """
@@ -169,7 +167,7 @@ def start(update: Update, context: CallbackContext):
 
         else:
             first_name = update.effective_user.first_name
-            update.effective_message.reply_animation(
+            update.effective_message.reply_photo(
                 ANTISPAM360IMGSTART,
                 caption=PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(context.bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN,
